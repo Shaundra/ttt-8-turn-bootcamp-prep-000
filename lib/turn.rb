@@ -36,7 +36,7 @@ def turn(board)
   if valid_move?(board, user_input) == true
     move(board, user_input)
   else
-    puts "Invalid move."
+    puts "Invalid move. Let's try again."
     turn(board)
   end
 
