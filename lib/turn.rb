@@ -26,6 +26,7 @@ end
 
 def move(board, index, token="X")
   board[index] = token
+  board
 end
 
 def turn(board)
@@ -35,6 +36,9 @@ def turn(board)
   while valid_move?(board, user_input) == false
     turn(board)
   end
+
+  if valid_move?(board, user_input) == true
+
 
   move(board, user_input)
  # valid_move?(board, user_input) == false
