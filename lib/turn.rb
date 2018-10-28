@@ -38,6 +38,7 @@ def turn(board)
   end
 
   if valid_move?(board, user_input) == true
+  end
 
 
   move(board, user_input)
