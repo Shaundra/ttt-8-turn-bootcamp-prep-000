@@ -32,12 +32,11 @@ def turn(board)
   puts "Please enter 1-9:"
   user_input = input_to_index(gets.strip)
 
-  if valid_move?(board, user_input) == true
-    move(board, user_input, token)
-  else
-    puts "Please enter 1-9:"
+  while valid_move?(board, user_input) == false
+    turn(board)
   end
 
+  move(board, user_input, token)
  # valid_move?(board, user_input) == false
  #  #  puts "Please make a valid move. Enter 1-9 into an empty space."
  #    puts "Please enter 1-9:"
