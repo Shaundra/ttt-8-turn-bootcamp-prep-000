@@ -36,7 +36,7 @@ def turn(board)
     turn(board)
   end
 
-  move(board, user_input, token)
+  move(board, user_input)
  # valid_move?(board, user_input) == false
  #  #  puts "Please make a valid move. Enter 1-9 into an empty space."
  #    puts "Please enter 1-9:"
